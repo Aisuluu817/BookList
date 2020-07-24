@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#ffff"
-    android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffff"
+        android:orientation="vertical">
 
 
     <ImageView
@@ -14,13 +14,13 @@
         android:layout_margin="10dp"
         android:src="@drawable/background_google" />
 
-    <LinearLayout
+<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
 
-        <EditText
+    <EditText
         android:id="@+id/search"
         android:layout_width="120dp"
         android:layout_height="20dp"
@@ -30,7 +30,7 @@
         android:layout_marginLeft="30dp"
         android:inputType="text" />
 
-        <Button
+    <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
         android:layout_weight="0.8"
         android:layout_margin="10dp"
         android:text="Search" />
-        </LinearLayout>
+</LinearLayout>
 
 
 </LinearLayout>

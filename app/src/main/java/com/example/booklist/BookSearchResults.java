@@ -27,6 +27,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class BookSearchResults extends AppCompatActivity  {
+
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private List<Items> myList = new ArrayList<>();
@@ -35,6 +36,7 @@ public class BookSearchResults extends AppCompatActivity  {
     private TextView emptyState;
     private BookListAdapter adapter;
     private TextView textView;
+
     private static final String BASE_URL = "https://www.googleapis.com/books/v1/";
     private static final String TAG = BookSearchResults.class.getSimpleName();
 
@@ -46,8 +48,8 @@ public class BookSearchResults extends AppCompatActivity  {
         emptyState = findViewById(R.id.empty_list);
         textView = findViewById(R.id.text_view);
         textView.setVisibility(View.GONE);
-
         progressBar = (ProgressBar) findViewById(R.id.loading_spinner);
+
         checkConnection();
     }
 
@@ -67,8 +69,6 @@ public class BookSearchResults extends AppCompatActivity  {
             emptyState.setText("No internet connection");
         }
     }
-
-
 
     private void retrofitInstance() {
         result = getIntent().getExtras().getString("Search").trim().replace(" ", "+");
